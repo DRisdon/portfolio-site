@@ -1,0 +1,300 @@
+body {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', monospace;
+  /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.38);*/
+}
+
+a {
+  text-decoration: none;
+  color: #484948;
+  ;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+  z-index: 2;
+}
+
+.navlink {
+  border-radius: 3px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, .9);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.38);
+  text-shadow: none;
+  display: inline-block;
+  margin: 0;
+  z-index: 2;
+}
+
+.navlink:hover {
+  background-color: rgba(219, 213, 213, 0.9);
+  cursor: pointer;
+}
+
+.navlink:active {
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.38);
+}
+
+.left .proj-link {
+  margin-right: 20px;
+  text-shadow: none;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.right .proj-link {
+  margin-left: 20px;
+  text-shadow: none;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.contact-icon {
+height: 40px;
+margin: 0 10px;
+}
+
+.contact-icon:hover {
+  margin: -1px 10px;
+}
+
+#name {
+  top: 30vh;
+  position: relative;
+}
+
+#title {
+  top: 20vh;
+  position: relative;
+}
+
+header {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  background-image: url('./');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /*text-shadow: 2px 2px 2px gray;*/
+  background-color: #75b8cb;
+  margin: 0;
+  color: white;
+  z-index: 1;
+}
+
+#skill-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  background-color: #0A2D4F;
+  width: 400px;
+  height: 400px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.38);
+  color: white;
+  border-radius: 3px;
+  margin: 100px 0;
+}
+
+ul, li {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 0;
+}
+
+li {
+  font-size: 36px;
+}
+
+section {
+  /*padding: 0 10%;*/
+  height: 100vh;
+  font-size: 30px;
+}
+
+footer {
+  height: 25vh;
+  background-color: #0A2D4F;
+  color: white;
+  padding-top: 30px;
+}
+
+.section-text {
+  padding: 50px 10%;
+}
+
+.project-section {
+  padding: 50px 0;
+}
+
+.about-text {
+  text-align: left;
+  margin: 0% 10%;
+  font-size: 24px;
+}
+
+#about {
+  background-color: #0A2D4F;
+  color: white;
+  line-height: 50px;
+}
+
+.headshot {
+  height: 200px;
+  /*border: 1px solid white;*/
+  border-radius: 50%;
+  margin-top: 1%;
+}
+
+#skills {
+  background-color: #E6F1F2;
+  color: #333433;
+}
+
+#read-more {
+  font-size: 20px;
+  top: 40vh;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+#read-more:hover {
+  color: #f6f6f6;
+  top: 40.15vh;
+}
+
+#projects {
+  height: auto;
+  background-color: #75b8cb;
+  color: white;
+}
+
+.project-content {
+  padding: 0 10px;
+  font-size: 26px;
+}
+
+.left {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  background-color:  #75b8cb;
+  padding: 40px 12%;
+  color: white;
+}
+
+.right {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  background-color: #E6F1F2;
+  padding: 40px 12%;
+  color: #333433;
+}
+
+.project-pic {
+  height: 400px;
+  box-shadow: .5px .5px .5px rgba(0, 0, 0, 0.38);
+}
+
+.tech {
+  font-size: 18px;
+}
+
+@media (max-width: 800px) {
+  header {
+    font-size: 30px;
+    height: 100vh;
+  }
+  nav {
+    top: 0;
+    left: 0;
+    margin: 20px 10px;
+    padding: 0;
+    display: none;
+  }
+  .navlink:active {
+    background-color: rgba(219, 213, 213, 0.9);
+  }
+  #name {
+    top: 15vh;
+    position: relative;
+  }
+  #title {
+    top: 15vh;
+    position: relative;
+  }
+  #read-more {
+    top: 30vh;
+  }
+  section {
+    /*padding: 0 10%;*/
+    height: auto;
+    font-size: 12px;
+  }
+  #skill-list {
+    flex-direction: column;
+    font-size: 16px;
+  }
+  #about {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .about-text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  ul {
+    width: auto;
+    height: 200px;
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+  li {
+    font-size: 20px;
+  }
+  .right, .left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    flex-flow: column-reverse;
+  }
+  .project-pic {
+    width: 300px;
+    height: auto;
+  }
+  .tech {
+    font-size: 13px;
+  }
+  .project-content {
+    text-align: center;
+  }
+  .proj-link {
+    display: block;
+    margin: 10px;
+  }
+  .left .proj-link {
+    margin-right: 0;
+  }
+  .right .proj-link {
+    margin-left: 0;
+  }
+}
