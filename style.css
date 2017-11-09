@@ -37,6 +37,7 @@ nav {
   margin: 0;
   z-index: 2;
   color: white;
+  transition: .15s all;
 }
 
 .navlink:hover {
@@ -63,12 +64,25 @@ nav {
 }
 
 .contact-icon {
-height: 40px;
-margin: 0 10px;
+  font-size: 50px;
+  color: white;
+  margin: 0 10px;
+  transition: .15s all;
 }
 
 .contact-icon:hover {
-  margin: -1px 10px;
+  color: #c1c1c1;
+}
+
+.contact-link {
+  font-size: 20px;
+  color: white;
+  margin: 0 10px;
+  transition: .15s all;
+}
+
+.contact-link:hover {
+  color: #c1c1c1;
 }
 
 #name {
@@ -77,7 +91,7 @@ margin: 0 10px;
 }
 
 #title {
-  top: 20vh;
+  top: 22vh;
   position: relative;
 }
 
@@ -85,7 +99,7 @@ header {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-size: 50px;
-  background-image: url('./');
+  background-image: url('./images/background.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -130,10 +144,10 @@ section {
 }
 
 footer {
-  height: 25vh;
+  height: 26vh;
   background-color: #0A2D4F;
   color: white;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .section-text {
@@ -151,7 +165,7 @@ footer {
 }
 
 #about {
-  background-color:  #eaf3f4;
+  background-color: #eaf3f4;
   color: #333433;
   line-height: 50px;
 }
@@ -164,7 +178,7 @@ footer {
 }
 
 #skills {
-  background-color:  #eaf3f4;
+  background-color: #eaf3f4;
   color: #333433;
 }
 
@@ -174,16 +188,18 @@ footer {
   text-align: center;
   position: relative;
   cursor: pointer;
+  color: white;
+  display: inline-block;
 }
 
 #read-more:hover {
   color: #f6f6f6;
-  top: 40.15vh;
+  top: 40.2vh;
 }
 
 #projects {
   height: auto;
-  background-color:  #eaf3f4;
+  background-color: #eaf3f4;
   color: #333433;
 }
 
@@ -196,7 +212,7 @@ footer {
   text-align: left;
   display: flex;
   justify-content: space-between;
-  background-color:   #eaf3f4;
+  background-color: #eaf3f4;
   padding: 40px 12%;
   color: #333433;
 }
@@ -221,7 +237,7 @@ footer {
   font-size: 18px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
   header {
     font-size: 30px;
     height: 100vh;
@@ -234,35 +250,32 @@ footer {
     display: none;
   }
   .navlink:active {
-    background-color: rgba(219, 213, 213, 0.9);
+    background-color: rgba(227, 142, 142, 0.9);
   }
   #name {
-    top: 15vh;
+    top: 20vh;
     position: relative;
+    font-size: 100px;
   }
   #title {
-    top: 15vh;
+    top: 20vh;
     position: relative;
+    font-size: 75px
   }
   #read-more {
-    top: 30vh;
+    top: 45vh;
+  }
+  #read-more:hover {
+    top: 45vh;
   }
   section {
     /*padding: 0 10%;*/
     height: auto;
-    font-size: 12px;
+    font-size: 40px;
   }
   #skill-list {
     flex-direction: column;
-    font-size: 16px;
-  }
-  #about {
-    font-size: 14px;
-    line-height: 25px;
-  }
-  .about-text {
-    font-size: 14px;
-    line-height: 25px;
+    font-size: 20px;
   }
   ul {
     width: auto;
@@ -282,7 +295,7 @@ footer {
     flex-flow: column-reverse;
   }
   .project-pic {
-    width: 300px;
+    width: 700px;
     height: auto;
   }
   .tech {
@@ -291,14 +304,54 @@ footer {
   .project-content {
     text-align: center;
   }
+  footer {
+    height: 200px;
+  }
+}
+
+@media (max-width: 800px) {
+  #name {
+    top: 30vh;
+    font-size: 50px;
+  }
+  #title {
+    top: 30vh;
+    font-size: 40px;
+  }
+  #read-more {
+    display: none;
+  }
+  #skill-list {
+    flex-direction: column;
+    font-size: 16px;
+  }
+  #about {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  section {
+    /*padding: 0 10%;*/
+    height: auto;
+    font-size: 20px;
+  }
+  .project-pic {
+    width: 300px;
+    height: auto;
+  }
+  .about-text {
+    font-size: 14px;
+    line-height: 25px;
+  }
   .proj-link {
     display: block;
-    margin: 10px;
   }
   .left .proj-link {
-    margin-right: 0;
+    margin: 10px 0;
   }
   .right .proj-link {
-    margin-left: 0;
+    margin: 10px 0;
+  }
+  footer h1 {
+    font-size: 1.5em;
   }
 }
