@@ -2,7 +2,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', monospace;
+  font-family: 'Roboto', sans-serif;
   /*text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.38);*/
 }
 
@@ -367,7 +367,7 @@ footer {
     height: auto;
   }
   .about-text {
-    font-size: 12px;
+    font-size: 16px;
     line-height: 20px;
     margin: 0;
   }
